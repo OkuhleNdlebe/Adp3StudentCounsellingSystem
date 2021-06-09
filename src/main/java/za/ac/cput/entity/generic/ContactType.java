@@ -39,6 +39,7 @@ public class ContactType {
 
         }
         public ContactType build() {
+
             return new ContactType(this);
         }
         public ContactType.Builder copy(ContactType contactType) {
