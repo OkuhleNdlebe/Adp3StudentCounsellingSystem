@@ -1,4 +1,5 @@
 package za.ac.cput.entity.generic;
+
 /*BookingHistory.java
  Entity for Booking History
  Author: Lihle Njobe(218193882)

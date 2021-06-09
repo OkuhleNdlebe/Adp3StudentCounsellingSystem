@@ -1,4 +1,5 @@
 package za.ac.cput.entity.generic;
+
 /*ContactType.java
  Entity for Contact type
  Author: Lihle Njobe(218193882)
