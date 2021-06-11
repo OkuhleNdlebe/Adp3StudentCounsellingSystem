@@ -24,11 +24,20 @@ public class ContactTypeFactoryTest {
 
     @Test
     public void testEquality() {
-        assertEquals(1,1);
+        ContactType.Builder type0 = new ContactType.Builder().setEmailAddress("218193882@mycput").setPhoneNumber(0);
+        ContactType.Builder type1 = new ContactType.Builder().setEmailAddress("218193882@mycput").setPhoneNumber(0);
+        type0 = type1;
+        assertEquals(type0,type1);
+        System.out.print("Equal");
     }
     @Test
     public void testIdentity(){
-        assertEquals(1, 2 );
+        ContactType.Builder type0 = new ContactType.Builder().setEmailAddress("218193882@mycput").setPhoneNumber(0);
+        ContactType.Builder type1 = new ContactType.Builder().setEmailAddress("218193882@mycput").setPhoneNumber(0);
+        type0 = type1;
+        assertSame(type0,type1);
+        System.out.print("Same");
+
     }
 
     @Test

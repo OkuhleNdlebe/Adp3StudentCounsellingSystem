@@ -6,10 +6,11 @@
  */
 
 package za.ac.cput.factory.generic;
-
 import org.junit.Test;
 import org.junit.jupiter.api.Disabled;
 import za.ac.cput.entity.generic.BookingHistory;
+import za.ac.cput.entity.generic.ContactDetail;
+
 
 import static org.junit.Assert.*;
 
@@ -23,11 +24,22 @@ public class BookingHistoryFactoryTest {
     }
     @Test
     public void testEquality() {
-        assertEquals(1,1);
+        ContactDetail.Builder contact2 = new ContactDetail.Builder().setEmailAddress("lihlenjobe@gmail.com").setPhoneNumber(0);
+        ContactDetail.Builder contact1 = new ContactDetail.Builder().setEmailAddress("lihlenjobe@gmail.com").setPhoneNumber(0);
+        contact2 = contact1;
+        assertEquals(contact2, contact1);
+        System.out.print("Equal");
+
+
     }
     @Test
     public void testIdentity(){
-        assertSame(1, 1 );
+        ContactDetail.Builder contact2 = new ContactDetail.Builder().setEmailAddress("lihlenjobe@gmail.com").setPhoneNumber(0);
+        ContactDetail.Builder contact1 = new ContactDetail.Builder().setEmailAddress("lihlenjobe@gmail.com").setPhoneNumber(0);
+        contact2 = contact1;
+        assertSame(contact2, contact1);
+        System.out.print("Same");
+
     }
 
     @Test
