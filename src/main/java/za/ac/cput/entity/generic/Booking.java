@@ -12,7 +12,8 @@ import java.util.Date;
  * Date: 9 June 2021
  */
 public class Booking {
-    private int bookingId, duration, userId;
+    private String bookingId, duration;
+    private int userId;
     private Time bookingTime;
     private Date bookingDate;
     private String bookingType, location;
@@ -41,18 +42,19 @@ public class Booking {
     }
 
     public static class Builder{
-        private int bookingId, duration, userId;
+        private String bookingId, duration;
+        private int userId;
         private Time bookingTime;
         private Date bookingDate;
         private String bookingType, location;
 
 
-        public Builder setBookingId(int bookingId) {
+        public Builder setBookingId(String bookingId) {
             this.bookingId = bookingId;
             return this;
         }
 
-        public Builder setDuration(int duration) {
+        public Builder setDuration(String duration) {
             this.duration = duration;
             return this;
         }
