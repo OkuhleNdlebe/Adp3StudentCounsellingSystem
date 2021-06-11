@@ -1,4 +1,4 @@
-package za.ac.cput.factory.user;
+package za.ac.cput.factory;
 
 /* UserFactory.java
  Factory for the User

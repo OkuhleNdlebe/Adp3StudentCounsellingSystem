@@ -4,7 +4,7 @@
  Date: 9 June 2021
  */
 
-package za.ac.cput;
+package za.ac.cput.factory;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Disabled;

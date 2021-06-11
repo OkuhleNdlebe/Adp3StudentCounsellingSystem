@@ -6,7 +6,6 @@ package za.ac.cput.factory;/*  za.ac.cput.factory.UserRoleFactoryTest.java
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.generic.UserRole;
-import za.ac.cput.factory.UserRoleFactory;
 
 class UserRoleFactoryTest {
     @Test

@@ -3,9 +3,6 @@ package za.ac.cput.factory;
 import za.ac.cput.Util.GenericHelper;
 import za.ac.cput.entity.generic.Booking;
 
-import java.sql.Date;
-import java.sql.Time;
-
 /**BookingFactory.java
  * Factory for BookingStatus
  * Author: Lindokuhle Nini (218196504)

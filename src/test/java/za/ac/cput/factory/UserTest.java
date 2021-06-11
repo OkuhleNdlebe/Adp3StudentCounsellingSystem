@@ -3,7 +3,6 @@ package za.ac.cput.factory;
 import org.junit.Ignore;
 import org.junit.Test;
 import za.ac.cput.entity.user.User;
-import za.ac.cput.factory.user.UserFactory;
 
 import java.util.Date;
 
