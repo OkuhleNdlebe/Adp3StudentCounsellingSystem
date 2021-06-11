@@ -1,4 +1,10 @@
-package za.ac.cput.entity.user;
+/*  UserRole.java
+    Entity for the User Role
+ *  Author: Vuyisa Nkangana
+ *  Date: 9 June 2021
+ */
+
+package za.ac.cput.entity.generic;
 
 public class UserRole {
     private int userId,roleId;
