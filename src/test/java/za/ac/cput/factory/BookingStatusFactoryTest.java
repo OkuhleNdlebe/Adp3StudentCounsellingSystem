@@ -1,9 +1,8 @@
-package za.ac.cput.factory.generic;
+package za.ac.cput.factory;
 
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-import za.ac.cput.entity.generic.Booking;
 import za.ac.cput.entity.generic.BookingStatus;
 
 import static org.junit.Assert.*;

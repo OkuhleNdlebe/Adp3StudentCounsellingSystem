@@ -1,4 +1,4 @@
-/* RoleFactoryTest.java
+package za.ac.cput.factory;/* za.ac.cput.factory.RoleFactoryTest.java
     Testing for Role Factory
     Author: Vuyisa Nkangana(218192215)
     Date: 11 June 2021
@@ -6,9 +6,7 @@
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.generic.Role;
-import za.ac.cput.factory.generic.RoleFactory;
-
-import static org.junit.jupiter.api.Assertions.*;
+import za.ac.cput.factory.RoleFactory;
 
 class RoleFactoryTest {
 

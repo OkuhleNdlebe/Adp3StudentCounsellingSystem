@@ -3,7 +3,7 @@
         *  Author: Vuyisa Nkangana(218192215)
         *  Date: 11 June 2021
         */
-package za.ac.cput.factory.generic;
+package za.ac.cput.factory;
 
 import za.ac.cput.entity.generic.Role;
 

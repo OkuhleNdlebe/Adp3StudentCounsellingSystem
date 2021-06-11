@@ -1,4 +1,4 @@
-/*  UserRoleFactoryTest.java
+package za.ac.cput.factory;/*  za.ac.cput.factory.UserRoleFactoryTest.java
     Testing for User Role Factory
     Author: Vuyisa Nkagnana(218192215)
     Date: 11 June 2021
@@ -6,7 +6,7 @@
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.generic.UserRole;
-import za.ac.cput.factory.generic.UserRoleFactory;
+import za.ac.cput.factory.UserRoleFactory;
 
 class UserRoleFactoryTest {
     @Test

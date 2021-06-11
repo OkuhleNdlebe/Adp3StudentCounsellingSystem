@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.factory;
 
 import org.junit.Ignore;
 import org.junit.Test;
