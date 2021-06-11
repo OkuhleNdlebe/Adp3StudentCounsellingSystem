@@ -2,7 +2,7 @@ package za.ac.cput;
 
 import org.junit.Ignore;
 import org.junit.Test;
-import za.ac.cput.user.User;
+import za.ac.cput.entity.user.User;
 
 import java.util.Date;
 

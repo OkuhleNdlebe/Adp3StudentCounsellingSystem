@@ -1,24 +1,23 @@
-package za.ac.cput.generic;
+package za.ac.cput.entity.generic;
 
-/*ContactType.java
- Entity for Contact type
+/*ContactDetail.java
+ Entity for Contact detail
  Author: Lihle Njobe(218193882)
  Date: 9 June 2021
  */
 
-public class ContactType {
-
+public class ContactDetail {
     private String emailAddress;
     private int phoneNumber;
 
-    private ContactType(ContactType.Builder builder) {
+    private ContactDetail(Builder builder) {
         this.emailAddress= builder.emailAddress;
         this.phoneNumber = builder.phoneNumber;
     }
 
     @Override
     public String toString() {
-        return "ContactType{" +
+        return "ContactDetail{" +
                 "emailAddress='" + emailAddress + '\'' +
                 ", phoneNumber=" + phoneNumber +
                 '}';
@@ -28,27 +27,25 @@ public class ContactType {
         private String emailAddress;
         private int phoneNumber;
 
-        public ContactType.Builder setEmailAddress(String emailAddress) {
+        public Builder setEmailAddress(String emailAddress) {
             this.emailAddress = emailAddress;
 
             return this;
         }
 
-        public ContactType.Builder setPhoneNumber(int phoneNumber) {
+        public Builder setPhoneNumber(int phoneNumber) {
             this.phoneNumber = phoneNumber;
             return this;
 
         }
-        public ContactType build() {
-
-            return new ContactType(this);
+        public ContactDetail build() {
+            return new ContactDetail(this);
         }
-        public ContactType.Builder copy(ContactType contactType) {
-            this.emailAddress = contactType.emailAddress;
-            this.phoneNumber = contactType.phoneNumber;
+        public Builder copy(ContactDetail contactDetail) {
+            this.emailAddress = contactDetail.emailAddress;
+            this.phoneNumber = contactDetail.phoneNumber;
             return this;
         }
 
     }
 }
-

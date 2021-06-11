@@ -1,4 +1,4 @@
-package za.ac.cput.user;
+package za.ac.cput.entity.user;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package za.ac.cput.generic;
+package za.ac.cput.entity.generic;
 
 /**BookingStatus.java
  * Entity for the Booking Status
