@@ -1,4 +1,4 @@
-package za.ac.cput.entity.generic;
+package za.ac.cput.generic;
 
 /* TimeSlotAvailability.java
  Entity for the TimeSlotAvailability

@@ -1,7 +1,4 @@
-package za.ac.cput.entity.generic;
-
-import java.sql.Time;
-import java.util.Date;
+package za.ac.cput.generic;
 
 /**BookingStatus.java
  * Entity for the Booking Status

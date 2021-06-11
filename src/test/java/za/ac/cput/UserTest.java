@@ -1,7 +1,8 @@
-package za.ac.cput.entity.generic;
+package za.ac.cput;
 
 import org.junit.Ignore;
 import org.junit.Test;
+import za.ac.cput.user.User;
 
 import java.util.Date;
 
