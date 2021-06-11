@@ -11,7 +11,7 @@ import za.ac.cput.entity.generic.BookingHistory;
 
  public class BookingHistoryFactory {
 
-    public static BookingHistory createContactDetail(int userId, int bookingId, String userFeedback) {
+    public static BookingHistory createBookingHistory(int userId, int bookingId, String userFeedback) {
         String bookingNumber = GenericHelper.generateId();
         BookingHistory bookingHistory = new BookingHistory.Builder()
                 .setBookingId(bookingId)
