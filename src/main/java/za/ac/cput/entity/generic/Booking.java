@@ -12,11 +12,9 @@ import java.util.Date;
  * Date: 9 June 2021
  */
 public class Booking {
-    private String bookingId, duration;
+    private String bookingId, duration, bookingTime, bookingDate, bookingType, location;
     private int userId;
-    private Time bookingTime;
-    private Date bookingDate;
-    private String bookingType, location;
+
 
     private Booking(Builder builder) {
         this.bookingId = builder.bookingId;
@@ -42,12 +40,8 @@ public class Booking {
     }
 
     public static class Builder{
-        private String bookingId, duration;
+        private String bookingId, duration, bookingTime, bookingDate, bookingType, location;
         private int userId;
-        private Time bookingTime;
-        private Date bookingDate;
-        private String bookingType, location;
-
 
         public Builder setBookingId(String bookingId) {
             this.bookingId = bookingId;
@@ -64,12 +58,12 @@ public class Booking {
             return this;
         }
 
-        public Builder setBookingTime(Time bookingTime) {
+        public Builder setBookingTime(String bookingTime) {
             this.bookingTime = bookingTime;
             return this;
         }
 
-        public Builder setBookingDate(Date bookingDate) {
+        public Builder setBookingDate(String bookingDate) {
             this.bookingDate = bookingDate;
             return this;
         }

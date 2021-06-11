@@ -7,13 +7,13 @@ import java.sql.Date;
 import java.sql.Time;
 
 /**BookingFactory.java
- * Factory for the Booking Status
+ * Factory for BookingStatus
  * Author: Lindokuhle Nini (218196504)
  * Date: 11 June 2021
  */
 public class BookingFactory {
 
-    public static Booking createBooking(String bookingType, Time bookingTime, Date bookingDate, String location, String duration){
+    public static Booking createBooking(String bookingType, String bookingTime, String bookingDate, String location, String duration){
         String bookingId = GenericHelper.generateId();
         Booking booking = new Booking.Builder()
                 .setBookingId(bookingId)
