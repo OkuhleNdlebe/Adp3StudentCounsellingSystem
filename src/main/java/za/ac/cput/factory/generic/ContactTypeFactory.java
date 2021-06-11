@@ -5,7 +5,6 @@
  */
 
 package za.ac.cput.factory.generic;
-
 import za.ac.cput.entity.generic.ContactType;
 
 public class ContactTypeFactory {
