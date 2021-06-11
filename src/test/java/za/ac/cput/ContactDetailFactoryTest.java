@@ -1,7 +1,7 @@
 
 /*ContactDetailFactory.java
  Test case for Contact detail
- Author: Lihle Njobe(218193882)
+ Author: Lihle Njobe-(218193882)
  Date: 9 June 2021
  */
 

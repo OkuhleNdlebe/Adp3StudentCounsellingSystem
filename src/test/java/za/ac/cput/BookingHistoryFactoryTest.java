@@ -1,7 +1,7 @@
 
 /*BookingHistory.java
  Test Case for Booking History
- Author: Lihle Njobe(218193882)
+ Author: Lihle Njobe-(218193882)
  Date: 9 June 2021
  */
 
