@@ -3,6 +3,7 @@ package za.ac.cput;
 import org.junit.Ignore;
 import org.junit.Test;
 import za.ac.cput.entity.user.User;
+import za.ac.cput.factory.user.UserFactory;
 
 import java.util.Date;
 
@@ -19,12 +20,13 @@ public class UserTest {
     @Test
     public void objectIdentity(){
 
-        User.Builder user0 = new User.Builder().setId(217046207).setFirstName("Legiste").setLastName("Ndabashinze")
-                .setGender("Male").setDateOfBirth(new Date(1999,04,16));
-        User.Builder user1 = new User.Builder().setId(000000000).setFirstName("Gandalf").setLastName("TheGrey")
-                .setGender("Male").setDateOfBirth(new Date(1990,01,01));
+        User user0 = UserFactory.createUser("Legiste","Ndabashinze","Male",
+                new Date(1999,04,16));
 
-        User.Builder user2 = user0;
+        User user1 = UserFactory.createUser("Elon","Musk","",
+                new Date(1971, 06,28));
+
+        User user2 = user0;
 
         assertNotSame(user0, user1);
         System.out.println("OBJECT IDENTITY:: User0 is NOT IDENTICAL to User1");
@@ -36,14 +38,13 @@ public class UserTest {
 
     @Test
     public void objectEquality(){
-        User.Builder user0 = new User.Builder().setId(217046207).setFirstName("Legiste").setLastName("Ndabashinze")
-                .setGender("Male").setDateOfBirth(new Date(1999,04,16));
-        User.Builder user1 = new User.Builder().setId(000000001).setFirstName("Bilbo").setLastName("Baggons")
-                .setGender("Male").setDateOfBirth(new Date(1995,02,02));
+        User user0 = UserFactory.createUser("Legiste","Ndabashinze","Male",
+                new Date(1999,04,16));
+        User user1 = UserFactory.createUser("Jeff","Bezos","",
+                new Date(1964, 01,12));
+        User user2 = user0;
 
-        User.Builder user2 = user0;
-
-        assertNotEquals(user1, user1);
+        assertNotEquals(user0, user1);
         System.out.println("OBJECT EQUALITY:: User 1 Is NOT EQUAL to User0");
 
         assertEquals(user2, user0);
