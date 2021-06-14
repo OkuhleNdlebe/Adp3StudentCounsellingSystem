@@ -1,8 +1,5 @@
 package za.ac.cput.entity.generic;
 
-import java.sql.Time;
-import java.util.Date;
-
 /**BookingStatus.java
  * Entity for the Booking Status
  * Author: Lindokuhle Nini (218196504)
