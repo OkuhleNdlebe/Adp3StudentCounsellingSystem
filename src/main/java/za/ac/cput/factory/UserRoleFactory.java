@@ -11,7 +11,7 @@ import za.ac.cput.entity.generic.UserRole;
 
 public class UserRoleFactory {
     public static UserRole createUserRole(int userId, int userRole){
-        String roleId = GenericHelper.generateId();
+        int roleId = GenericHelper.generateId();
         UserRole userrole = new UserRole.Builder()
                 .setRoleId(userId)
                 .setRoleId(userId)

@@ -12,7 +12,12 @@ import java.util.Date;
  * Date: 9 June 2021
  */
 public class Booking {
-    private String bookingId, duration, bookingTime, bookingDate, bookingType, location;
+    private int bookingId;
+    private String duration;
+    private String bookingTime;
+    private String bookingDate;
+    private String bookingType;
+    private String location;
     private int userId;
 
 
@@ -40,10 +45,15 @@ public class Booking {
     }
 
     public static class Builder{
-        private String bookingId, duration, bookingTime, bookingDate, bookingType, location;
+        private int bookingId;
+        private String duration;
+        private String bookingTime;
+        private String bookingDate;
+        private String bookingType;
+        private String location;
         private int userId;
 
-        public Builder setBookingId(String bookingId) {
+        public Builder setBookingId(int bookingId) {
             this.bookingId = bookingId;
             return this;
         }
