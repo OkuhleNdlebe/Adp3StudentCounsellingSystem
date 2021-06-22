@@ -1,4 +1,5 @@
 package za.ac.cput.entity.generic;
+
 /*Entity for MemtalHealth
 Author :Justin Nkuna(219319820)
 Date:10 June 2021
@@ -6,13 +7,14 @@ Date:10 June 2021
 
 public class MentalHealth {
 
-    //Declaration of privatebattributes
+
     private int userId;
     private String disorderName;
     private String disorderDesc;
     private int counsellingBackgroundId;
 
     //creating the builder pattern for Mental health
+
     private   MentalHealth(Builder builder) {
 
          this.userId=builder.userId;
@@ -21,6 +23,17 @@ public class MentalHealth {
          this.counsellingBackgroundId=builder.counsellingBackgroundId;
     }
 //The toString method to return values
+
+    private MentalHealth(Builder builder) {
+
+        this.userId = builder.userId;
+        this.disorderName = builder.disorderName;
+        this.disorderDesc = builder.disorderDesc;
+        this.counsellingBackgroundId = builder.counsellingBackgroundId;
+    }
+
+    //The toString method to return values
+
     @Override
     public String toString() {
         return "MentalHealth{" +
@@ -31,7 +44,9 @@ public class MentalHealth {
                 '}';
     }
 
-    public static class Builder{
+
+    public static class Builder {
+
         private int userId;
         private String disorderName;
         private String disorderDesc;
@@ -61,19 +76,30 @@ public class MentalHealth {
             return this;
         }
 
-        public MentalHealth build(){
+
+        public MentalHealth build() {
+
 
             return new MentalHealth(this);
         }
 
 
         //copy constructor to create an object using another object on same  class
+
         public  Builder copy(MentalHealth mentalHealth){
 
              this.userId= mentalHealth.userId;
              this.disorderName=mentalHealth.disorderName;
              this.disorderDesc=mentalHealth.disorderDesc;
              this.counsellingBackgroundId= mentalHealth.counsellingBackgroundId;
+
+        public Builder copy(MentalHealth mentalHealth) {
+
+            this.userId = mentalHealth.userId;
+            this.disorderName = mentalHealth.disorderName;
+            this.disorderDesc = mentalHealth.disorderDesc;
+            this.counsellingBackgroundId = mentalHealth.counsellingBackgroundId;
+
 
             return this;
 
@@ -82,7 +108,12 @@ public class MentalHealth {
 
 
 
+
     }
+
+    }
+}
+
 
 
 
@@ -91,6 +122,7 @@ public class MentalHealth {
 
 
 }
+
 
 
 

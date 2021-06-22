@@ -30,7 +30,7 @@ public class CounsellingBackground {
         this.counsellingDuration = builder.counsellingDuration;
         this.treatmentTaken = builder.treatmentTaken;
     }
-//The toString method to return values
+
     @Override
     public String toString() {
         return "CounsellingBackground{" +
